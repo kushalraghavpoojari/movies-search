@@ -1,0 +1,48 @@
+@import '../../styles/colors.scss';
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $text-color;
+    &__btn {
+        border: 1px solid $border;
+        height: 45px;
+        width: 45px;
+        border-radius: 6px;
+        margin-left: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    &__input-container {
+        position: relative;
+        &__input {
+            height: 45px;
+            width: 350px;
+            border: 1px solid $border;
+            padding-left: 15px;
+            color: $text-color;
+            background-color: $background;
+            font-size: 15px;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+        &__label {
+            position: absolute;
+            color: $text-color;
+            font-size: 18px;
+            top: 10px;
+            left: 18px;
+            opacity: 0.5;
+            transition: top 0.5s; 
+        }
+        &__input:valid ~ &__label {
+            font-size: 13px;
+            top: -8px;
+            opacity: 1;
+            background-color: #1f4068;
+        }
+    }
+}

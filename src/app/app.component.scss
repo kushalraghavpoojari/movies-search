@@ -1,0 +1,18 @@
+@import '../styles/colors.scss';
+@import '../styles/media-screens.scss';
+
+.movies {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: $background;
+    &__header {
+        height: 60px;
+        padding: 20px;
+        &__logo {
+            font-size: 26px;
+            font-family: sans-serif;
+            color: $text-color;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+<div class="movie">
+    <img src="{{movie.Poster}}" alt="movie" class="movie__image">
+    <h3 class="movie__name">{{movie.Title}}</h3>
+    <div class="movie__overlay">
+    </div>
+    <div class="movie__details">
+        <span [routerLink]="['/movie', movie.imdbID]">View Details</span>
+    </div>
+</div>
