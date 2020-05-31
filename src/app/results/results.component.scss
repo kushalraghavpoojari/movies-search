@@ -1,6 +1,10 @@
+@import '../../styles/media-screens.scss';
 .results {
     display: flex;
     flex-wrap: wrap;
+    @media (max-width: $medium) {
+        justify-content: center;
+    }
     &__movie {
         padding: 20px;
     }

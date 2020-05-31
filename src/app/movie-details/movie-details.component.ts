@@ -23,6 +23,7 @@ export class MovieDetailsComponent {
         map(res => {
           return {
             ...res.movieDetails,
+            Released: res.movieDetails.Released.split(' ')[2],
             imdbRating: (parseInt(res.movieDetails.imdbRating)*10) + ''
           }
         })

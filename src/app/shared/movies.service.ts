@@ -24,7 +24,7 @@ export class MoviesService {
     }
 
     fetchMovieDetails(movieId: String) {
-        // return this.http
-        //     .get<MovieDetails>(`https://www.omdbapi.com/?i=${movieId}&apikey=${environment.apiKey}`);
+        return this.http
+            .get<MovieDetails>(`https://www.omdbapi.com/?i=${movieId}&apikey=${environment.apiKey}`);
     }
 }

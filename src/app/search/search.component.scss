@@ -1,4 +1,5 @@
 @import '../../styles/colors.scss';
+@import '../../styles/media-screens.scss';
 
 .search {
     display: flex;
@@ -21,6 +22,12 @@
         &__input {
             height: 45px;
             width: 350px;
+            @media screen and (max-width: $x-small){
+                width: 150px;
+            }
+            @media screen and (max-width: $small){
+                width: 250px;
+            }
             border: 1px solid $border;
             padding-left: 15px;
             color: $text-color;

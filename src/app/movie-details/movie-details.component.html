@@ -12,6 +12,53 @@
                 </div>
             </div>
         </div>
-        
+        <div class="movie-details__desc">
+            <div>
+                <h3 class="movie-details__desc__title">
+                    <span>{{movieDetails.Title}}</span>
+                    <span>({{movieDetails.Released}})</span>
+                </h3>
+                <p class="movie-details__desc__type">
+                    <span>{{movieDetails.Rated}}</span>
+                    <span>{{movieDetails.Genre}}</span>
+                    <span>{{movieDetails.Runtime}}</span>
+                    <span class="movie-details__desc__type-ac">{{movieDetails.Type}}</span>
+                </p>
+                <div class="movie-details__desc__info">
+                    <div class="movie-details__desc__info-left">
+                        <p class="movie-details__desc__info-left__plot">
+                            Plot
+                        </p>
+                        <p class="movie-details__desc__info-left__plot-desc">
+                            {{movieDetails.Plot}}
+                        </p>
+                        <p class="movie-details__desc__info-left-actors">
+                            <span>Actors</span>
+                            <span>{{movieDetails.Actors}}</span>
+                        </p>
+                        <p class="movie-details__desc__info-left-actors">
+                            <span>Director</span>
+                            <span>{{movieDetails.Director}}</span>
+                        </p>
+                    </div>
+                    <div class="movie-details__desc__info-right">
+                        <p class="movie-details__desc__info-right__writer">
+                            Writer
+                        </p>
+                        <p class="movie-details__desc__info-right__writer-name">
+                            {{movieDetails.Writer}}
+                        </p>
+    
+                        <p class="movie-details__desc__info-right__votes">
+                            <span>Votes</span>
+                            <span>{{movieDetails.imdbVotes}}</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-details__desc-back">
+                <div routerLink='/'>Back to Search</div>
+            </div>
+        </div>
     </section>
 </article>

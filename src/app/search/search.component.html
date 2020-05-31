@@ -1,11 +1,11 @@
 <div class="search">
     <div class="search__input-container">
-        <input type="text" id="movie-input" class="search__input-container__input" [(ngModel)]="movie" required>
+        <input type="text" id="movie-input" class="search__input-container__input" [(ngModel)]="movie" (keydown)="keyDownFunction($event)" required>
         <label for="movie-input" class="search__input-container__label">
             Movie Name
         </label>
     </div>
-    <div class="search__btn" (click)="searchMovie()">
+    <div class="search__btn" (click)="searchMovie()" role="button" tabindex="0">
         <mat-icon aria-hidden="false" aria-label="Search">search</mat-icon>
     </div>
 </div>
